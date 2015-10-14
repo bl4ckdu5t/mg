@@ -1,0 +1,24 @@
+{
+  "name": "mikegoldfield",
+  "version": "1.0.0",
+  "description": "Mike Goldfield's portfolio website",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bl4ckdu5t/mg.git"
+  },
+  "keywords": [
+    "design",
+    "illustration",
+    "art"
+  ],
+  "author": "Joseph Rex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bl4ckdu5t/mg/issues"
+  },
+  "homepage": "https://github.com/bl4ckdu5t/mg#readme"
+}
