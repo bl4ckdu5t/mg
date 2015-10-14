@@ -1,2 +1,2 @@
-# strich
-Strich dot io website
+# Website for MG
+Mike's website
