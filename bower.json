@@ -1,0 +1,31 @@
+{
+  "name": "mikegoldfield",
+  "description": "Mike Goldfield's portfolio website",
+  "main": "gulpfile.js",
+  "authors": [
+    "Joseph Rex"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "illustration",
+    "art"
+  ],
+  "homepage": "https://github.com/bl4ckdu5t/mg",
+  "moduleType": [
+    "globals"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~3.1.0"
+  }
+}

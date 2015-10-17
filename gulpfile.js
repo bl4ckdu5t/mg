@@ -20,22 +20,16 @@ var mqpacker = require('css-mqpacker');
 var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('css', function(){
-  var cssFiles = ['./src/scss/*.scss'];
-  return gulp.src(cssFiles)
-    .pipe(sass({outputStyle: 'compressed'}))
-    .pipe(concatCss('app.css'))
-    .pipe(gulp.dest('./dist/css'));
-});
-
-gulp.task('postprocess', function(){
   var processors = [
     autoprefixer({browsers: ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']}),
     mqpacker
-  ];
-  return gulp.src('./dist/css/*.css')
+  ]
+  return gulp.src('./src/scss/*.scss')
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(postcss(processors))
     .pipe(gulp.dest('./dist/css'));
 });
+
 // Static server
 gulp.task('browser-sync', function(){
   browserSync({
@@ -83,7 +77,9 @@ gulp.task('watch', function(){
   gulp.watch('./src/**/*.scss', ['css', browserSync.reload]);
 
   gulp.watch('./src/**/*.js', ['scripts', browserSync.reload]);
+
+  gulp.watch(['*.html','./src/*.html'], ['html', browserSync.reload]);
 });
 
 
-gulp.task('default', ['css', 'postprocess','browser-sync', 'scripts', 'watch']);
+gulp.task('default', ['css','browser-sync', 'html', 'scripts', 'watch']);

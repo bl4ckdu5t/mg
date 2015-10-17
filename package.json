@@ -20,5 +20,22 @@
   "bugs": {
     "url": "https://github.com/bl4ckdu5t/mg/issues"
   },
-  "homepage": "https://github.com/bl4ckdu5t/mg#readme"
+  "homepage": "https://github.com/bl4ckdu5t/mg#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "browser-sync": "^2.9.11",
+    "css-mqpacker": "^4.0.0",
+    "gulp": "^3.9.0",
+    "gulp-cache": "^0.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-htmlmin": "^1.2.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.4.2"
+  }
 }
