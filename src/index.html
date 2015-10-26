@@ -26,7 +26,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="dist/css/app.css">
   <script src="vendor/js/modernizr-2.8.3.min.js"></script>
 </head>
@@ -34,12 +34,23 @@
   <!--[if lt IE 8]>
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <header></header>
+  <header class="header">
+    <img src="dist/images/logo.svg" class="header__logo" alt="MG">
+    <h1 class="header__caption">Mike Goldfield</h1>
+    <h5 class="header__description">Branding Designer</h5>
+    <nav class="header__navigation">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Me</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <main></main>
-  <footer></footer>
-  <h1>Mike Goldfield</h1>
-  <img src="dist/images/logo.svg" alt="MG">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sequi sunt enim molestiae, doloremque dolore omnis quos eaque eum? Repellat itaque voluptas qui quod ipsum. Nesciunt adipisci quasi, in odit sequi modi excepturi vitae numquam perspiciatis illo eveniet quibusdam natus.</p>
+  <footer class="footer container">
+    &copy; Mike Goldfield 2015
+    <div class="social-icons"></div>
+  </footer>
   <script src="dist/js/app.js"></script>
 </body>
 </html>

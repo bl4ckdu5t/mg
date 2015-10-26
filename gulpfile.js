@@ -42,7 +42,7 @@ gulp.task('browser-sync', function(){
 // Concatenate & Minify
 gulp.task('scripts', function(){
   var jsFiles = [
-    './src/components/jquery/dist/jquery.min.js',
+    //'./vendor/components/jquery/dist/jquery.min.js',
     './src/js/*.js'];
   return gulp.src(jsFiles)
     .pipe(sourcemaps.init())
