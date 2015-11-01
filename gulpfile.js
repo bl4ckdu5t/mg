@@ -42,7 +42,7 @@ gulp.task('browser-sync', function(){
 // Concatenate & Minify
 gulp.task('scripts', function(){
   var jsFiles = [
-    //'./vendor/components/jquery/dist/jquery.min.js',
+    './vendor/components/jquery/dist/jquery.min.js',
     './src/js/*.js'];
   return gulp.src(jsFiles)
     .pipe(sourcemaps.init())
@@ -78,8 +78,8 @@ gulp.task('watch', function(){
 
   gulp.watch('./src/**/*.js', ['scripts', browserSync.reload]);
 
-  gulp.watch(['*.html','./src/*.html'], ['html', browserSync.reload]);
+  gulp.watch(['*.html'], ['html', browserSync.reload]);
 });
 
 
-gulp.task('default', ['css','browser-sync', 'html', 'scripts', 'watch']);
+gulp.task('default', ['css','browser-sync', 'scripts', 'watch']);

@@ -21,6 +21,11 @@
       height: 150%;
     }
   }
+  &-txtcenter{ text-align: center }
+  &-txtleft{ text-align: left }
+  &-txtright{ text-align: right }
+  &-fr{ float: right }
+  &-fl{ float: left }
   &-visuallyhidden{
     border: 0;
     clip: rect(0 0 0 0);
@@ -38,5 +43,14 @@
       position: static;
       width: auto;
     }
+  }
+}
+.clearfix{
+  &:after, &:before{
+    content: " ";
+    display: table;
+  }
+  &:after{
+    clear: both;
   }
 }

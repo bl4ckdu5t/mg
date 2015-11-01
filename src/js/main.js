@@ -4,7 +4,7 @@ function ready(cb) {
 		: cb();
 }
 ready(function(){
-	
+	Grid.init();
 });
 /* Scroll to Hashbanged links */
 (function(){
