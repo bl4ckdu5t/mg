@@ -49,7 +49,7 @@ body{
 .footer{
 	padding: 20px 10px;
 	@include breakpoint($breakpoint-iphone-landscape){
-		padding: 10px 50px;
+		padding: 20px 50px;
 	}
 	&__copyright{
 		float: left;
@@ -92,7 +92,6 @@ body{
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	height: 250px;
 }
 
 .og-grid li > a,
@@ -151,14 +150,10 @@ body{
 	top: 50%;
 	height: 1px;
 	background: #888;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 
 .og-close::after {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 
@@ -238,21 +233,7 @@ body{
 	top: 50%;
 	left: 50%;
 	margin: -25px 0 0 -25px;
-	-webkit-animation: loader 0.5s infinite ease-in-out both;
-	-moz-animation: loader 0.5s infinite ease-in-out both;
 	animation: loader 0.5s infinite ease-in-out both;
-}
-
-@-webkit-keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
-}
-
-@-moz-keyframes loader {
-	0% { background: #ddd; }
-	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
-	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
 }
 
 @keyframes loader {
