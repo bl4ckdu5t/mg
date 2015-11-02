@@ -3,13 +3,15 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Joseph> -- <Developer> -- <@joerex101>
+    <Mike>   -- <Designer>  -- <GolfieldMike>
 
 # THANKS
 
-    <name>
+    <-->
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Gulp
