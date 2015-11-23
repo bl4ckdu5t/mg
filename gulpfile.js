@@ -43,6 +43,7 @@ gulp.task('browser-sync', function(){
 gulp.task('scripts', function(){
   var jsFiles = [
     './vendor/components/jquery/dist/jquery.min.js',
+    './vendor/components/transition.js/js/transition.js',
     './src/js/*.js'];
   return gulp.src(jsFiles)
     .pipe(sourcemaps.init())
@@ -74,11 +75,11 @@ gulp.task('html', function(){
 
 // Watch
 gulp.task('watch', function(){
-  gulp.watch('./src/**/*.scss', ['css', browserSync.reload]);
+  gulp.watch('./src/**/*.scss', ['css', reload]);
 
-  gulp.watch('./src/**/*.js', ['scripts', browserSync.reload]);
+  gulp.watch('./src/**/*.js', ['scripts', reload]);
 
-  gulp.watch(['*.html'], ['html', browserSync.reload]);
+  gulp.watch(['*.html'], ['html', reload]);
 });
 
 

@@ -57,14 +57,14 @@
     <a href="./"><img src="dist/images/logo.svg" alt="MG" class="header__logo"></a>
     <nav class="header__navigation">
       <a href="">Home</a>
-      <a href="">About me</a>
-      <a href="">Contact</a>
+      <a href="#about">About me</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
   <main class="main">
     <h1 class="main__caption">Mike Goldfield</h1>
     <h5 class="main__description">Brand Designer</h5>
-    <ul id="og-grid" class="og-grid">
+    <ul id="og-grid" class="og-grid js-page--home">
       <li>
         <a href="http://www.mikegoldfield.com" data-largesrc="dist/images/1.png" data-title="Aoer branding design" data-description="aoer is just a random word i came up with hoping to make some logo to incorporate it. Which i did end up doing, i used nothing but the cutting tool to make sure the smooth and sleek edges were perfect all round">
           <img src="dist/images/1.png" alt="img01"/>
@@ -201,6 +201,30 @@
         </a>
       </li>
     </ul>
+    <article class="article js-page--about">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, eaque. Odio reprehenderit veritatis, ipsa, totam dolorum quas minima quisquam non, esse delectus laudantium eveniet dolor fuga nihil assumenda porro aperiam reiciendis earum nostrum suscipit. Impedit libero facere voluptatum recusandae consequuntur modi, voluptatibus tenetur natus minima quis quo ipsam repellat doloremque nihil nam eius, qui quasi, placeat sapiente quisquam fuga velit officiis, illo et aliquam! Aspernatur, tempore repellat deserunt expedita reiciendis magnam atque veniam perferendis dolor voluptatibus. Modi, necessitatibus voluptate expedita consequuntur ratione asperiores accusamus ipsum tempore dignissimos voluptatibus ipsam dolorum at, quos quisquam dicta. Maiores repudiandae accusamus, ex, at minima, a aut nihil autem ipsa animi suscipit eveniet ducimus incidunt perspiciatis illo omnis! Ab officia impedit dicta voluptatum placeat ut eligendi tenetur? Ullam doloremque, ipsa eveniet molestias similique quis possimus non rem quae eaque dolor debitis quas enim modi natus sed iste ad totam. Ipsam itaque labore, quibusdam sed amet doloribus corporis omnis odio sequi blanditiis eligendi, explicabo, aperiam accusamus voluptatibus, sit magni! Earum officia distinctio harum nihil in commodi animi cupiditate provident molestiae mollitia suscipit eligendi quibusdam, fuga hic amet illo rerum quod aliquam ipsam quas similique, dolore facere explicabo ducimus! Deleniti non dicta iure, earum tempore a iusto.</p>
+    </article>
+    <article class="article js-page--contact">
+      <h2>Send me a message</h2>
+      <form action="//formspree.io/goldfieldmike@yahoo.com" method="POST">
+        <input type="hidden" name="_subject" value="New Form Contact from mikegoldfield.com" />
+        <input type="text" name="_gotcha" style="display:none" />
+        <div class="row">
+          <div class="six columns">
+            <label for="name">Your Name</label>
+            <input type="text" class="u-full-width" id="name" name="name" placeholder="Your Name">
+          </div>
+          <div class="six columns">
+            <label for="email">Your Email</label>
+            <input type="email" class="u-full-width" name="_replyto" id="email" placeholder="Your Email">
+          </div>
+        </div>
+        <label for="exampleMessage">Message</label>
+        <textarea class="u-full-width" placeholder="Hi Mike …" id="exampleMessage"></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </article>
   </main>
   <footer class="footer clearfix">
     <div class="footer__copyright">&copy; All rights reserved. Developed by <a href="http://strich.io">Strich</a></div>

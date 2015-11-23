@@ -26,5 +26,8 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "transition.js": "~1.0.0"
   }
 }

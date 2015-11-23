@@ -5,6 +5,18 @@ function ready(cb) {
 }
 ready(function(){
 	Grid.init();
+	$('[href="#about"]').click(function(e){
+		e.preventDefault();
+		$('.og-grid').slideUp('slow');
+		$('.js-page--contact').slideUp('slow');
+		$('.js-page--about').slideDown('slow');
+	});
+	$('[href="#contact"]').click(function(e){
+		e.preventDefault();
+		$('.og-grid').fadeOut('slow');
+		$('.js-page--about').fadeOut('slow');
+		$('.js-page--contact').fadeIn('slow');
+	});
 });
 /* Scroll to Hashbanged links */
 (function(){
