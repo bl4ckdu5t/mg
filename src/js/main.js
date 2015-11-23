@@ -13,9 +13,9 @@ ready(function(){
 	});
 	$('[href="#contact"]').click(function(e){
 		e.preventDefault();
-		$('.og-grid').fadeOut('slow');
-		$('.js-page--about').fadeOut('slow');
-		$('.js-page--contact').fadeIn('slow');
+		$('.og-grid').slideUp('slow');
+		$('.js-page--about').slideUp('slow');
+		$('.js-page--contact').slideDown('slow');
 	});
 });
 /* Scroll to Hashbanged links */
